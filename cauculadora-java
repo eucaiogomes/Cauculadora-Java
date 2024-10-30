@@ -1,0 +1,33 @@
+import javax.swing.JOptionPane;
+public class Main {
+    public static void main(String[] args) {
+
+        int n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero: "));
+        int n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero: "));
+
+        int opcao = Integer.parseInt(JOptionPane.showInputDialog("1 - soma\n2 - Subtração\n3 - Mutiplicação\n4 - Divisão\n "));
+        switch (opcao){
+            case 1 :
+                int soma = n1+n2;
+                JOptionPane.showMessageDialog(null,"Soma : \n"+n1+ " + "+ n2 +" = "+ soma );
+                break;
+            case 2 :
+                int subtracao = n1-n2;
+                JOptionPane.showMessageDialog(null,"Subtração : \n"+n1+ " - "+ n2 +" = "+subtracao);
+                break;
+            case 3 :
+                int multiplicao = n1*n2;
+                JOptionPane.showMessageDialog(null,"Multiplicação : \n"+n1+ " X "+ n2 +" = "+multiplicao);
+                break;
+            case 4 :
+                int divisao = n1/n2;
+                JOptionPane.showMessageDialog(null,"Divisão : \n"+n1+ " / "+ n2 +" = "+divisao);
+                break;
+
+
+
+
+
+        }
+    }
+}
